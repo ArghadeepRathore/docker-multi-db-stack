@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:4.4
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: arghadeep
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5433:5432"   # host port 5433 → container port 5432
+
+  mariadb:
+    image: mariadb:11
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - "3307:3306"   # host port 3307 → container port 3306
+
