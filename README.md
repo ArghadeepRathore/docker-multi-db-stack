@@ -36,5 +36,11 @@ This project proves you can:
 
 Here’s the stack running successfully:
 
-![Docker Containers Running](screenshot.png)
+### PostgreSQL
+![PostgreSQL Screenshot](postgres.png)
 
+### MariaDB
+![MariaDB Screenshot](mariadb.png)
+
+### MongoDB
+![MongoDB Screenshot](mongodb.png)
